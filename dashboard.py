@@ -21,7 +21,7 @@ from strategies.consensus import analyze_consensus
 from memory.memory_log import get_past_context, review_pending
 
 HOST = "0.0.0.0"
-PORT = 8899
+PORT = int(os.environ.get("PORT", 8899))
 
 
 class QuantDashboard(BaseHTTPRequestHandler):

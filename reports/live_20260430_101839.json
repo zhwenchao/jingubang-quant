@@ -1,0 +1,22 @@
+[
+  {
+    "symbol": "510050",
+    "signal": "error",
+    "error": "获取510050历史数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  {
+    "symbol": "510300",
+    "signal": "error",
+    "error": "获取510300历史数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  {
+    "symbol": "510500",
+    "signal": "error",
+    "error": "获取510500历史数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  {
+    "symbol": "588000",
+    "signal": "error",
+    "error": "获取588000历史数据失败: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+]

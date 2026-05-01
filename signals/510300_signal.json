@@ -1,0 +1,40 @@
+{
+  "symbol": "510300",
+  "name": "沪深300ETF华泰柏瑞",
+  "signal": "buy",
+  "strength": 4.97,
+  "price": 4.824,
+  "change_pct": 0.06,
+  "risk_level": "medium",
+  "risk_issues": [
+    "信号强度5%过低，建议忽略"
+  ],
+  "reason": "ma:buy(4%) | momentum:hold(0%) | volatility:hold(30%) | rsrs:buy(35%)",
+  "strategy_details": [
+    {
+      "strategy": "ma",
+      "signal": "buy",
+      "strength": 3.739215809153773,
+      "detail": "上行(快3慢10):价格4.824>快线4.805>慢线4.787"
+    },
+    {
+      "strategy": "momentum",
+      "signal": "hold",
+      "strength": 0.1437200583211795,
+      "detail": "5日动量+0.48%,无显著方向"
+    },
+    {
+      "strategy": "volatility",
+      "signal": "hold",
+      "strength": 30,
+      "detail": "年化波动率16.3%,介于阈值之间"
+    },
+    {
+      "strategy": "rsrs",
+      "signal": "buy",
+      "strength": 34.51597509061681,
+      "detail": "RSRS beta=0.98, Z=1.15>入场0.5"
+    }
+  ],
+  "timestamp": "2026-05-01 08:03:23"
+}

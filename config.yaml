@@ -1,0 +1,48 @@
+# 金箍棒量化交易系统 - 主配置
+# 路径：所有路径相对于项目根目录或绝对路径
+
+paths:
+  signals_dir: "signals"
+  reports_dir: "reports"
+  data_cache: "data/cache"
+
+trading:
+  symbols:
+    - "510050"   # 上证50ETF
+    - "510300"   # 沪深300ETF
+    - "510500"   # 中证500ETF
+    - "588000"   # 科创50ETF
+  mode: "live"          # live | backtest
+
+akshare:
+  enabled: true
+
+strategies:
+  ma:
+    enabled: true
+    weight: 0.35
+    fast: 3
+    slow: 10
+  momentum:
+    enabled: true
+    weight: 0.25
+    period: 5
+    threshold: 0.005
+  volatility:
+    enabled: true
+    weight: 0.15
+    lookback: 20
+    low_threshold: 0.15
+    high_threshold: 0.35
+  rsrs:
+    enabled: true
+    weight: 0.25
+    lookback: 18
+    entry_threshold: 0.5
+    exit_threshold: -0.3
+
+risk:
+  max_position: 0.95
+  stop_loss: -0.05
+  trailing_stop: true
+  volatility_stop: true

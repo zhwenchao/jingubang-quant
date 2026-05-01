@@ -1,0 +1,160 @@
+[
+  {
+    "symbol": "510050",
+    "name": "上证50ETF华夏",
+    "signal": "buy",
+    "strength": 2.25,
+    "price": 3.055,
+    "change_pct": 0.46,
+    "risk_level": "medium",
+    "risk_issues": [
+      "信号强度2%过低，建议忽略"
+    ],
+    "reason": "ma:buy(5%) | momentum:buy(1%) | volatility:buy(7%) | rsrs:buy(24%)",
+    "strategy_details": [
+      {
+        "strategy": "ma",
+        "signal": "buy",
+        "strength": 4.948357743017474,
+        "detail": "上行(快3慢10):价格3.041>快线3.026>慢线3.011"
+      },
+      {
+        "strategy": "momentum",
+        "signal": "buy",
+        "strength": 1.1980033277870117,
+        "detail": "5日动量+1.20%>阈值+0.5%"
+      },
+      {
+        "strategy": "volatility",
+        "signal": "buy",
+        "strength": 7.205246141495813,
+        "detail": "年化波动率13.9%<低波阈值15%"
+      },
+      {
+        "strategy": "rsrs",
+        "signal": "buy",
+        "strength": 23.54490207991311,
+        "detail": "RSRS beta=0.94, Z=0.78>入场0.5"
+      }
+    ],
+    "timestamp": "2026-04-30 11:49:00"
+  },
+  {
+    "symbol": "510300",
+    "name": "沪深300ETF华泰柏瑞",
+    "signal": "buy",
+    "strength": 4.5,
+    "price": 4.819,
+    "change_pct": -0.04,
+    "risk_level": "medium",
+    "risk_issues": [
+      "信号强度5%过低，建议忽略"
+    ],
+    "reason": "ma:buy(2%) | momentum:hold(0%) | volatility:hold(30%) | rsrs:buy(33%)",
+    "strategy_details": [
+      {
+        "strategy": "ma",
+        "signal": "buy",
+        "strength": 2.4480572468772133,
+        "detail": "上行(快3慢10):价格4.821>快线4.791>慢线4.779"
+      },
+      {
+        "strategy": "momentum",
+        "signal": "hold",
+        "strength": 0.06235709831635683,
+        "detail": "5日动量+0.21%,无显著方向"
+      },
+      {
+        "strategy": "volatility",
+        "signal": "hold",
+        "strength": 30,
+        "detail": "年化波动率16.9%,介于阈值之间"
+      },
+      {
+        "strategy": "rsrs",
+        "signal": "buy",
+        "strength": 32.588612197197634,
+        "detail": "RSRS beta=0.97, Z=1.09>入场0.5"
+      }
+    ],
+    "timestamp": "2026-04-30 11:49:18"
+  },
+  {
+    "symbol": "510500",
+    "name": "中证500ETF南方",
+    "signal": "buy",
+    "strength": 6.84,
+    "price": 8.407,
+    "change_pct": -0.18,
+    "risk_level": "low",
+    "risk_issues": [],
+    "reason": "ma:buy(1%) | momentum:hold(0%) | volatility:hold(30%) | rsrs:buy(53%)",
+    "strategy_details": [
+      {
+        "strategy": "ma",
+        "signal": "buy",
+        "strength": 1.1784209159727597,
+        "detail": "上行(快3慢10):价格8.422>快线8.354>慢线8.345"
+      },
+      {
+        "strategy": "momentum",
+        "signal": "hold",
+        "strength": 0.11709047900650416,
+        "detail": "5日动量-0.39%,无显著方向"
+      },
+      {
+        "strategy": "volatility",
+        "signal": "hold",
+        "strength": 30,
+        "detail": "年化波动率24.7%,介于阈值之间"
+      },
+      {
+        "strategy": "rsrs",
+        "signal": "buy",
+        "strength": 53.10025063334662,
+        "detail": "RSRS beta=0.98, Z=1.77>入场0.5"
+      }
+    ],
+    "timestamp": "2026-04-30 11:49:35"
+  },
+  {
+    "symbol": "588000",
+    "name": "科创50ETF华夏",
+    "signal": "buy",
+    "strength": 4.43,
+    "price": 1.647,
+    "change_pct": 4.57,
+    "risk_level": "medium",
+    "risk_issues": [
+      "信号强度4%过低，建议忽略"
+    ],
+    "reason": "ma:hold(59%) | momentum:buy(3%) | volatility:hold(30%) | rsrs:buy(32%)",
+    "strategy_details": [
+      {
+        "strategy": "ma",
+        "signal": "hold",
+        "strength": 58.70841487279863,
+        "detail": "价格1.575,快线1.578,慢线1.533"
+      },
+      {
+        "strategy": "momentum",
+        "signal": "buy",
+        "strength": 3.00850228907783,
+        "detail": "5日动量+3.01%>阈值+0.5%"
+      },
+      {
+        "strategy": "volatility",
+        "signal": "hold",
+        "strength": 30,
+        "detail": "年化波动率33.3%,介于阈值之间"
+      },
+      {
+        "strategy": "rsrs",
+        "signal": "buy",
+        "strength": 32.45716778875382,
+        "detail": "RSRS beta=1.06, Z=1.08>入场0.5"
+      }
+    ],
+    "timestamp": "2026-04-30 11:49:51"
+  }
+]

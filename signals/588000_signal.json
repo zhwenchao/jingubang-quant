@@ -1,0 +1,38 @@
+{
+  "symbol": "588000",
+  "name": "科创50ETF华夏",
+  "signal": "buy",
+  "strength": 8.05,
+  "price": 1.654,
+  "change_pct": 5.02,
+  "risk_level": "low",
+  "risk_issues": [],
+  "reason": "ma:buy(33%) | momentum:buy(10%) | volatility:sell(1%) | rsrs:buy(41%)",
+  "strategy_details": [
+    {
+      "strategy": "ma",
+      "signal": "buy",
+      "strength": 32.54552499031383,
+      "detail": "上行(快3慢10):价格1.654>快线1.599>慢线1.549"
+    },
+    {
+      "strategy": "momentum",
+      "signal": "buy",
+      "strength": 9.681697612732098,
+      "detail": "5日动量+9.68%>阈值+0.5%"
+    },
+    {
+      "strategy": "volatility",
+      "signal": "sell",
+      "strength": 0.7333912139535714,
+      "detail": "年化波动率35.4%>高波阈值35%"
+    },
+    {
+      "strategy": "rsrs",
+      "signal": "buy",
+      "strength": 41.310618649614355,
+      "detail": "RSRS beta=1.09, Z=1.38>入场0.5"
+    }
+  ],
+  "timestamp": "2026-05-01 08:03:59"
+}

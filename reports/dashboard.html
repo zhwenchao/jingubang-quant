@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>金箍棒量化 — 恐贪版</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans SC',sans-serif;background:#0d1117;color:#c9d1d9;padding:20px}
+h1{font-size:22px;color:#58a6ff;margin-bottom:2px}
+.sub{color:#8b949e;font-size:13px;margin-bottom:20px}
+h2{font-size:13px;color:#8b949e;text-transform:uppercase;letter-spacing:1px;margin:20px 0 10px}
+.fgi-dial{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:20px;margin-bottom:20px;display:flex;align-items:center;gap:24px}
+.fgi-circle{width:120px;height:120px;border-radius:50%;flex-shrink:0;display:flex;flex-direction:column;align-items:center;justify-content:center;border:5px solid #3fb950;background:#0d1117}
+.fgi-num{font-size:36px;font-weight:800;color:#3fb950;line-height:1}
+.fgi-lb{font-size:14px;font-weight:600;color:#3fb950;margin-top:2px}
+.fgi-detail h3{font-size:15px;color:#e6edf3;margin-bottom:6px}
+.fgi-detail .s{font-size:12px;color:#8b949e;margin:3px 0}
+.sub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px}
+.sc{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:14px;border-left:3px solid #30363d}
+.sc .nm{font-size:14px;font-weight:700;color:#e6edf3}
+.sc .pr{font-size:20px;font-weight:700;margin:6px 0 3px}
+.sc .mt{font-size:11px;color:#8b949e}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px}
+.card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:16px;border-left:3px solid #30363d}
+.card.buy{border-left-color:#3fb950}.card.hold{border-left-color:#d29922}.card.sell{border-left-color:#f85149}
+.sym{font-size:18px;font-weight:700;color:#e6edf3}
+.nm2{font-size:12px;color:#8b949e;margin:2px 0 12px}
+.badge{display:inline-block;padding:2px 10px;border-radius:16px;font-size:12px;font-weight:700}
+.badge.buy{background:#3fb95022;color:#3fb950;border:1px solid #3fb95044}
+.badge.hold{background:#d2992222;color:#d29922;border:1px solid #d2992244}
+.prr{display:flex;align-items:baseline;gap:10px;margin:12px 0 6px}
+.pn{font-size:28px;font-weight:700;color:#e6edf3}
+.chg{font-size:14px;font-weight:600}
+.chg.pos{color:#3fb950}.chg.neg{color:#f85149}
+.sl{font-size:11px;color:#8b949e;margin-top:8px}
+.bar{height:5px;background:#21262d;border-radius:2px;margin-top:3px;overflow:hidden}
+.fill{height:100%;border-radius:2px}
+.fill.buy{background:linear-gradient(90deg,#3fb95044,#3fb950)}
+table{width:100%;border-collapse:collapse;font-size:12px;background:#161b22;border-radius:6px}
+th{text-align:left;color:#8b949e;padding:8px 10px;border-bottom:1px solid #21262d;font-weight:500;background:#0d1117}
+td{padding:8px 10px;border-bottom:1px solid #21262d;color:#c9d1d9}
+.footer{margin-top:16px;font-size:11px;color:#484f58;text-align:center}
+</style>
+</head>
+<body>
+
+<h1>📊 金箍棒量化仪表盘</h1>
+<div class="sub">2026-04-30 11:48 ｜ 含恐惧贪婪指数</div>
+
+<div class="fgi-dial">
+  <div class="fgi-circle">
+    <div class="fgi-num">77</div>
+    <div class="fgi-lb">贪婪</div>
+  </div>
+  <div class="fgi-detail">
+    <h3>沪深300 恐贪指数</h3>
+    <div class="s">波动率: 16.5% ｜ vs20日均线: 3.00% ｜ vs60日均线: 3.41%</div>
+    <div class="s">点位: 4810.35 ｜ 20日线: 计算中</div>
+  </div>
+</div>
+
+<h2>主要指数恐贪</h2>
+<div class="sub-grid">
+<div class="sc" style="border-left-color:#3fb950">
+  <div class="nm">上证50</div>
+  <div class="pr">2967.50</div>
+  <div class="mt">恐贪: <strong style="color:#3fb950">76/100</strong> 贪婪</div>
+  <div class="mt">波动13.8% 偏离1.94%</div>
+</div>
+<div class="sc" style="border-left-color:#3fb950">
+  <div class="nm">创业板指</div>
+  <div class="pr">3687.17</div>
+  <div class="mt">恐贪: <strong style="color:#3fb950">73/100</strong> 贪婪</div>
+  <div class="mt">波动32.2% 偏离5.13%</div>
+</div>
+<div class="sc" style="border-left-color:#3fb950">
+  <div class="nm">中证500</div>
+  <div class="pr">8342.42</div>
+  <div class="mt">恐贪: <strong style="color:#3fb950">73/100</strong> 贪婪</div>
+  <div class="mt">波动23.2% 偏离3.57%</div>
+</div>
+</div>
+
+<h2>ETF 实盘信号</h2>
+<div class="grid">
+<div class="card buy">
+  <div class="sym">510050</div>
+  <div class="nm2">上证50ETF华夏</div>
+  <span class="badge buy">BUY</span>
+  <div class="prr"><span class="pn">3.055</span><span class="chg pos">+0.46%</span></div>
+  <div class="sl">强度 2%</div>
+  <div class="bar"><div class="fill buy" style="width:2.25%"></div></div>
+</div>
+<div class="card buy">
+  <div class="sym">510300</div>
+  <div class="nm2">沪深300ETF</div>
+  <span class="badge buy">BUY</span>
+  <div class="prr"><span class="pn">4.819</span><span class="chg neg">-0.04%</span></div>
+  <div class="sl">强度 4%</div>
+  <div class="bar"><div class="fill buy" style="width:4.5%"></div></div>
+</div>
+<div class="card buy">
+  <div class="sym">510500</div>
+  <div class="nm2">中证500ETF南方</div>
+  <span class="badge buy">BUY</span>
+  <div class="prr"><span class="pn">8.407</span><span class="chg neg">-0.18%</span></div>
+  <div class="sl">强度 7%</div>
+  <div class="bar"><div class="fill buy" style="width:6.84%"></div></div>
+</div>
+<div class="card buy">
+  <div class="sym">588000</div>
+  <div class="nm2">科创50ETF华夏</div>
+  <span class="badge buy">BUY</span>
+  <div class="prr"><span class="pn">1.647</span><span class="chg pos">+4.57%</span></div>
+  <div class="sl">强度 4%</div>
+  <div class="bar"><div class="fill buy" style="width:4.43%"></div></div>
+</div>
+</div>
+
+<h2>策略明细</h2>
+<table>
+<tr><th>标的</th><th>信号</th><th>评分</th><th>策略</th><th>恐贪</th></tr><tr><td>510050</td><td>buy</td><td>2%</td><td style="font-size:11px;color:#8b949e">ma:buy; momentum:buy; volatility:buy; rsrs:buy</td><td style="color:#3fb950">76/100</td></tr><tr><td>510300</td><td>buy</td><td>4%</td><td style="font-size:11px;color:#8b949e">ma:buy; momentum:hold; volatility:hold; rsrs:buy</td><td style="color:#3fb950">77/100</td></tr><tr><td>510500</td><td>buy</td><td>7%</td><td style="font-size:11px;color:#8b949e">ma:buy; momentum:hold; volatility:hold; rsrs:buy</td><td style="color:#3fb950">73/100</td></tr><tr><td>588000</td><td>buy</td><td>4%</td><td style="font-size:11px;color:#8b949e">ma:hold; momentum:buy; volatility:hold; rsrs:buy</td><td style="color:#3fb950">73/100</td></tr>
+</table>
+<div class="footer">金箍棒量化系统 v2.0 ｜ 恐贪基于波动率+均线偏离合成</div>
+</body>
+</html>

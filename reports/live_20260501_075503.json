@@ -1,0 +1,158 @@
+[
+  {
+    "symbol": "510050",
+    "name": "上证50ETF华夏",
+    "signal": "buy",
+    "strength": 3.34,
+    "price": 3.062,
+    "change_pct": 0.69,
+    "risk_level": "medium",
+    "risk_issues": [
+      "信号强度3%过低，建议忽略"
+    ],
+    "reason": "ma:buy(9%) | momentum:buy(2%) | volatility:buy(14%) | rsrs:buy(31%)",
+    "strategy_details": [
+      {
+        "strategy": "ma",
+        "signal": "buy",
+        "strength": 8.764658421477275,
+        "detail": "上行(快3慢10):价格3.062>快线3.042>慢线3.016"
+      },
+      {
+        "strategy": "momentum",
+        "signal": "buy",
+        "strength": 2.0326557814061896,
+        "detail": "5日动量+2.03%>阈值+0.5%"
+      },
+      {
+        "strategy": "volatility",
+        "signal": "buy",
+        "strength": 13.618077441154309,
+        "detail": "年化波动率13.0%<低波阈值15%"
+      },
+      {
+        "strategy": "rsrs",
+        "signal": "buy",
+        "strength": 30.88738570577828,
+        "detail": "RSRS beta=0.98, Z=1.03>入场0.5"
+      }
+    ],
+    "timestamp": "2026-05-01 07:54:14"
+  },
+  {
+    "symbol": "510300",
+    "name": "沪深300ETF华泰柏瑞",
+    "signal": "buy",
+    "strength": 4.97,
+    "price": 4.824,
+    "change_pct": 0.06,
+    "risk_level": "medium",
+    "risk_issues": [
+      "信号强度5%过低，建议忽略"
+    ],
+    "reason": "ma:buy(4%) | momentum:hold(0%) | volatility:hold(30%) | rsrs:buy(35%)",
+    "strategy_details": [
+      {
+        "strategy": "ma",
+        "signal": "buy",
+        "strength": 3.739215809153773,
+        "detail": "上行(快3慢10):价格4.824>快线4.805>慢线4.787"
+      },
+      {
+        "strategy": "momentum",
+        "signal": "hold",
+        "strength": 0.1437200583211795,
+        "detail": "5日动量+0.48%,无显著方向"
+      },
+      {
+        "strategy": "volatility",
+        "signal": "hold",
+        "strength": 30,
+        "detail": "年化波动率16.3%,介于阈值之间"
+      },
+      {
+        "strategy": "rsrs",
+        "signal": "buy",
+        "strength": 34.51597509061681,
+        "detail": "RSRS beta=0.98, Z=1.15>入场0.5"
+      }
+    ],
+    "timestamp": "2026-05-01 07:54:31"
+  },
+  {
+    "symbol": "510500",
+    "name": "中证500ETF南方",
+    "signal": "buy",
+    "strength": 5.63,
+    "price": 8.43,
+    "change_pct": 0.09,
+    "risk_level": "low",
+    "risk_issues": [],
+    "reason": "ma:buy(2%) | momentum:buy(1%) | volatility:hold(30%) | rsrs:buy(65%)",
+    "strategy_details": [
+      {
+        "strategy": "ma",
+        "signal": "buy",
+        "strength": 1.5306976632943923,
+        "detail": "上行(快3慢10):价格8.430>快线8.375>慢线8.362"
+      },
+      {
+        "strategy": "momentum",
+        "signal": "buy",
+        "strength": 0.6567164179104523,
+        "detail": "5日动量+0.66%>阈值+0.5%"
+      },
+      {
+        "strategy": "volatility",
+        "signal": "hold",
+        "strength": 30,
+        "detail": "年化波动率24.3%,介于阈值之间"
+      },
+      {
+        "strategy": "rsrs",
+        "signal": "buy",
+        "strength": 64.78141007319032,
+        "detail": "RSRS beta=1.02, Z=2.16>入场0.5"
+      }
+    ],
+    "timestamp": "2026-05-01 07:54:47"
+  },
+  {
+    "symbol": "588000",
+    "name": "科创50ETF华夏",
+    "signal": "buy",
+    "strength": 8.05,
+    "price": 1.654,
+    "change_pct": 5.02,
+    "risk_level": "low",
+    "risk_issues": [],
+    "reason": "ma:buy(33%) | momentum:buy(10%) | volatility:sell(1%) | rsrs:buy(41%)",
+    "strategy_details": [
+      {
+        "strategy": "ma",
+        "signal": "buy",
+        "strength": 32.54552499031383,
+        "detail": "上行(快3慢10):价格1.654>快线1.599>慢线1.549"
+      },
+      {
+        "strategy": "momentum",
+        "signal": "buy",
+        "strength": 9.681697612732098,
+        "detail": "5日动量+9.68%>阈值+0.5%"
+      },
+      {
+        "strategy": "volatility",
+        "signal": "sell",
+        "strength": 0.7333912139535714,
+        "detail": "年化波动率35.4%>高波阈值35%"
+      },
+      {
+        "strategy": "rsrs",
+        "signal": "buy",
+        "strength": 41.310618649614355,
+        "detail": "RSRS beta=1.09, Z=1.38>入场0.5"
+      }
+    ],
+    "timestamp": "2026-05-01 07:55:03"
+  }
+]

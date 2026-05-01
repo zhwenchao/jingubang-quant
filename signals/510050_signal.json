@@ -1,0 +1,40 @@
+{
+  "symbol": "510050",
+  "name": "上证50ETF华夏",
+  "signal": "buy",
+  "strength": 3.34,
+  "price": 3.062,
+  "change_pct": 0.69,
+  "risk_level": "medium",
+  "risk_issues": [
+    "信号强度3%过低，建议忽略"
+  ],
+  "reason": "ma:buy(9%) | momentum:buy(2%) | volatility:buy(14%) | rsrs:buy(31%)",
+  "strategy_details": [
+    {
+      "strategy": "ma",
+      "signal": "buy",
+      "strength": 8.764658421477275,
+      "detail": "上行(快3慢10):价格3.062>快线3.042>慢线3.016"
+    },
+    {
+      "strategy": "momentum",
+      "signal": "buy",
+      "strength": 2.0326557814061896,
+      "detail": "5日动量+2.03%>阈值+0.5%"
+    },
+    {
+      "strategy": "volatility",
+      "signal": "buy",
+      "strength": 13.618077441154309,
+      "detail": "年化波动率13.0%<低波阈值15%"
+    },
+    {
+      "strategy": "rsrs",
+      "signal": "buy",
+      "strength": 30.88738570577828,
+      "detail": "RSRS beta=0.98, Z=1.03>入场0.5"
+    }
+  ],
+  "timestamp": "2026-05-01 08:03:07"
+}

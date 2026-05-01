@@ -1,0 +1,38 @@
+{
+  "symbol": "510500",
+  "name": "中证500ETF南方",
+  "signal": "buy",
+  "strength": 5.63,
+  "price": 8.43,
+  "change_pct": 0.09,
+  "risk_level": "low",
+  "risk_issues": [],
+  "reason": "ma:buy(2%) | momentum:buy(1%) | volatility:hold(30%) | rsrs:buy(65%)",
+  "strategy_details": [
+    {
+      "strategy": "ma",
+      "signal": "buy",
+      "strength": 1.5306976632943923,
+      "detail": "上行(快3慢10):价格8.430>快线8.375>慢线8.362"
+    },
+    {
+      "strategy": "momentum",
+      "signal": "buy",
+      "strength": 0.6567164179104523,
+      "detail": "5日动量+0.66%>阈值+0.5%"
+    },
+    {
+      "strategy": "volatility",
+      "signal": "hold",
+      "strength": 30,
+      "detail": "年化波动率24.3%,介于阈值之间"
+    },
+    {
+      "strategy": "rsrs",
+      "signal": "buy",
+      "strength": 64.78141007319032,
+      "detail": "RSRS beta=1.02, Z=2.16>入场0.5"
+    }
+  ],
+  "timestamp": "2026-05-01 08:03:40"
+}

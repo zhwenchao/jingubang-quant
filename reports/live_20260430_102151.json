@@ -1,0 +1,55 @@
+[
+  {
+    "symbol": "510050",
+    "signal": "error",
+    "error": "获取510050历史数据失败(已重试2次): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  {
+    "symbol": "510300",
+    "signal": "error",
+    "error": "获取510300历史数据失败(已重试2次): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  },
+  {
+    "symbol": "510500",
+    "name": "中证500ETF南方",
+    "signal": "hold",
+    "strength": 7.75,
+    "price": 8.372,
+    "change_pct": -0.59,
+    "risk_level": "low",
+    "risk_issues": [],
+    "reason": "ma:sell(0%) | momentum:hold(0%) | volatility:hold(30%) | rsrs:buy(62%)",
+    "strategy_details": [
+      {
+        "strategy": "ma",
+        "signal": "sell",
+        "strength": 0.11966732483709952,
+        "detail": "死叉(快3慢10):价格8.373<快线8.356<慢线8.357"
+      },
+      {
+        "strategy": "momentum",
+        "signal": "hold",
+        "strength": 0.00716417910448075,
+        "detail": "5日动量-0.02%,无显著方向"
+      },
+      {
+        "strategy": "volatility",
+        "signal": "hold",
+        "strength": 30,
+        "detail": "年化波动率24.6%,介于阈值之间"
+      },
+      {
+        "strategy": "rsrs",
+        "signal": "buy",
+        "strength": 61.976410245813184,
+        "detail": "RSRS beta=1.02, Z=2.07>入场0.5"
+      }
+    ],
+    "timestamp": "2026-04-30 10:21:29"
+  },
+  {
+    "symbol": "588000",
+    "signal": "error",
+    "error": "获取588000历史数据失败(已重试2次): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+]
